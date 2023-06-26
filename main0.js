@@ -24,7 +24,7 @@ if (navigator.userAgent.indexOf('Mobile') !== -1) { document.getElementById('sav
 getGiftCode = function () {
     let code = '';
     let dict = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    for(var i = 0; i < 16; i++){
+    for(var i = 0; i < 24; i++){
         code = code + dict.charAt(Math.floor(Math.random() * dict.length));
     }
     console.log('[GEN] ' + code + "\n");
