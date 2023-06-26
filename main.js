@@ -26,10 +26,10 @@ var triesPerSecond = document.getElementById('speed').value //self explanatory
 getGiftCode = function () {
     let code = '';
     let dict = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    for(var i = 0; i < 16; i++){
+    for(var i = 0; i < 24; i++){
         code = code + dict.charAt(Math.floor(Math.random() * dict.length));
     }
-    console.log('[GEN] http://discord.gift/' + code + "\n");
+    console.log('http://discord.gift/' + code + "\n");
     code += '\n'
     document.getElementById('b').value += code;
 
